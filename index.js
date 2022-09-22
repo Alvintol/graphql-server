@@ -28,3 +28,22 @@ const resolvers = {
     books: () => books
   }
 }
+
+const {
+  ApolloServerPLuginLandingPageLocalDefault
+} = require('apollo-server-core');
+
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  csrfPrevention: true,
+  cache: 'bounded',
+  plugins: [
+    ApolloServerPLuginLandingPageLocalDefault({ embed: true })
+  ]
+})
+
+server.listen()
+  .then(({ url }) =>
+    console.log(`🚀  Server ready at ${url}`)
+  );
