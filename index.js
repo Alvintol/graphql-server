@@ -30,7 +30,7 @@ const resolvers = {
 }
 
 const {
-  ApolloServerPLuginLandingPageLocalDefault
+  ApolloServerPluginLandingPageLocalDefault
 } = require('apollo-server-core');
 
 const server = new ApolloServer({
@@ -39,9 +39,9 @@ const server = new ApolloServer({
   csrfPrevention: true,
   cache: 'bounded',
   plugins: [
-    ApolloServerPLuginLandingPageLocalDefault({ embed: true })
-  ]
-})
+    ApolloServerPluginLandingPageLocalDefault({ embed: true }),
+  ],
+});
 
 server.listen()
   .then(({ url }) =>
