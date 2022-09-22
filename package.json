@@ -1,0 +1,20 @@
+{
+  "name": "26-graphql",
+  "version": "1.0.0",
+  "description": "Fundamentals of building a graphql server with the goal of deploying onto heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alvintol/graphql-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alvintol/graphql-server/issues"
+  },
+  "homepage": "https://github.com/Alvintol/graphql-server#readme"
+}
